@@ -1,0 +1,31 @@
+body > h1{
+    letter-spacing: 0.5ch;
+    font-size: 80px;
+    text-align: center;
+}
+body{
+    background: linear-gradient(to bottom, #ff3300 0%, #ff99cc 100%);
+    font-family: 'Nunito', sans-serif;
+}
+.code{
+    margin: 5%;
+}
+.code > img{
+    text-align: center;
+    width: 90%;
+    margin: 5%;
+    border-radius: 20px;
+}
+.code > h1{
+    text-align: center;
+}
+.code > p,
+.code > li{
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.code > li{
+    padding-bottom: 1%;
+}
