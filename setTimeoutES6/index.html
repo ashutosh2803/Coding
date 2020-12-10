@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>ES6</title>
+</head>
+<body>
+    <h1>SetTimeout in ES6</h1>
+    <div class="code">
+        <h1>Code 1</h1>
+        <img src="./code1.png">
+        <p>In this code a for loop starts with i declared using var keyword and intialised with value 0 in the global scope as it is not inside any function, and it has a console.log and a setTimeout function nested inside which also has a seperate console.log inside it, and it runs after 1sec. For every iteration of i, setTImeout function is called and i keeps incrementing till it reaches i = 20, it hence breaks the for loop and exits. The setTImeout then has the final value of i = 20 which is in global scope available to it. So it prints i = 20, 20 times of the setTimeout function.</p>
+        <h1>Code 2</h1>
+        <img src="./code2.png">
+        <p>In this code a for loop starts with i declared using let keyword and intialised with value 0 in the block scope, and it has a console.log and a setTimeout function nested inside which also a console.log inside it. For every iteration of i, i is printed and setTImeout function is also called which runs after 1 secs, as the value of i is scope of block only, so each value is carried in the setTImeout function call and with every increment, setTImeout function also receives the updated value because if i reaches 20 and breaks out of the loop, scope of i will end and setTImeout function won't receive value of i at that time. So it supplies values at the runtime with everyiteration. So finally setTimeout function will print value of i from 0 to 19.</p>
+    </div>
+</body>
+</html>
